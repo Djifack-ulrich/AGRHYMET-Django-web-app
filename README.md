@@ -30,7 +30,8 @@ Ensure you have the following installed:
 
 ```bash
 git clone https://github.com/Djifack-ulrich/AGRHYMET-Django-web-app.git
-cd AGRHYMET-Django-web-app```
+cd AGRHYMET-Django-web-app
+```
 
 # 📂 Configure the Data Directory  
 You need to add the `SubX/data` directory from the AGRHYMET HPC to the `src` folder.  
@@ -49,7 +50,8 @@ On Linux, run:
 ```bash
 python3.12 -m venv .env3.12
 source .env3.12/bin/activate
-pip install -r requirements.txt ```
+pip install -r requirements.txt
+```
 
 ## 🔄 Apply Database Migrations  
 Move to the Django project directory:  
@@ -57,13 +59,15 @@ Move to the Django project directory:
 ```bash
 cd src/ClamateAGRHYMET
 python manage.py makemigrations
-python manage.py migrate```
+python manage.py migrate
+```
 
 ## 🚀 Run the Development Server  
 Start the Django development server:  
 
 ```bash
-python manage.py runserver```
+python manage.py runserver
+```
 
 ## 📁 Project Structure  
 
