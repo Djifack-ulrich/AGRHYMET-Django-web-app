@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.header-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+.header-section img {
+    max-height: 60px;
+}
+.header-section p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.leaflet-interactive {
+pointer-events: none; /* Ignore les clics */
+}
+  
+.leaflet-tooltip {
+pointer-events: auto; /* Autorise les interactions avec les infobulles */
+}
+  
+
+ /* Style de l'indicateur de chargement */
+ #loader {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    font-size: 30px; /* Taille du texte */
+    font-weight: bold; /* Écriture en gras */
+    color: white; /* Couleur du texte */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 20px; /* Espace autour du texte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre */
+    text-align: center; /* Center text */
+}
+
+/* Style pour les points */
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%; /* Cercle */
+    background-color: white; /* Couleur des points */
+    animation: blink 1s infinite; /* Animation pour clignoter */
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+    0%, 20%, 100% { opacity: 0; }
+    10%, 30% { opacity: 1; }
+}
+
+/* Animation pour chaque point avec un délai différent */
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Styliser le canvas */
+#stats {
+    width: 100%; /* Ajuste la largeur au conteneur parent */
+    max-width: 800px; /* Largeur maximale */
+    height: auto; /* Garde un bon ratio hauteur/largeur */
+    max-height: 400px; /* Empêche qu'il soit trop grand */
+    display: block; /* Supprime l'espace blanc en bas */
+    margin: 20px auto; /* Centre le canvas */
+    border: 2px solid #333; /* Bordure pour démarquer */
+    border-radius: 8px; /* Coins arrondis pour un look moderne */
+    background-color: #f9f9f9; /* Légère couleur de fond */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+
