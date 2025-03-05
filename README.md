@@ -38,7 +38,8 @@ You need to add the `SubX/data` directory from the AGRHYMET HPC to the `src` fol
 To access the AGRHYMET HPC, use:  
 
 ```bash
-ssh ulrich.djifack@154.127.90.199 ```
+ssh ulrich.djifack@154.127.90.199
+```
 # 🔑 Password: cra24
 Copy the SubX/data directory to your local machine and place it inside the src folder.
 
