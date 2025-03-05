@@ -70,7 +70,7 @@ python manage.py runserver
 ```
 
 ## 📁 Project Structure  
-
+```bash
 AGRHYMET-Django-web-app/
 ├── src/
 │   ├── ClamateAGRHYMET/
@@ -84,6 +84,7 @@ AGRHYMET-Django-web-app/
 │   └── manage.py
 ├── requirements.txt
 └── README.md
+```
 
 
 
