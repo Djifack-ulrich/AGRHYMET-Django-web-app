@@ -41,7 +41,7 @@ To access the AGRHYMET HPC, use:
 ```bash
 ssh ulrich.djifack@154.127.90.199
 ```
-# 🔑 Password: cra24
+# 🔑 For Password contact: ulrich.djifack@aims-cameroon.org
 Copy the SubX/data directory to your local machine and place it inside the src folder.
 
 ## 🏗️ Create a Virtual Environment and Install Dependencies  
